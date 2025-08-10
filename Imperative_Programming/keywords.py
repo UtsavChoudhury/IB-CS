@@ -22,6 +22,8 @@ assert 2 + 2 == 4  # passes silently
 
 # async
 # Defines an asynchronous function.
+#This means the function can pause itself and let other code run while it’s waiting.    
+#Useful for tasks like waiting for a file, network, or timer without freezing the whole program.
 
 import asyncio
 
@@ -39,6 +41,15 @@ async def main():
 
 # To run async example:
 # asyncio.run(main())
+
+#Why is this useful?
+#Normally, if you did a time.sleep(1), your whole program would freeze for 1 second.
+
+#With await asyncio.sleep(1), your program can do other things during that wait (like handling user input, networking, or other tasks).
+
+#This makes your program more efficient and responsive.
+
+
 
 
 # break
@@ -130,12 +141,13 @@ print(square(5))  # Output: 25
 def outer():
     x = "hello"
     def inner():
-        nonlocal x
-        x = "world"
+        nonlocal x       # This tells Python: "Use the x from the nearest outer scope"
+        x = "world"      # Now we modify the outer x, not create a new local one
     inner()
     print(x)
 
 outer()  # prints "world"
+
 
 
 # not

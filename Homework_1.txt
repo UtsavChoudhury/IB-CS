@@ -1,0 +1,7 @@
+1.
+    a. Fundamental: Addition, storing values
+    b. Compound: Machine learning, data analysis
+
+2. A compiler transforms code written in high-level programming languages into low-level machine code for execution.
+
+3. Constants help avoid mistakes resulting from the re-assignment of variables. 
