@@ -4,7 +4,7 @@ sol_found = False
 
 while (not sol_found):
     if ((n * (n+1)) / 2 > s):
-        print(n)
         sol_found = True
+        print(n)
     else:
         n += 1

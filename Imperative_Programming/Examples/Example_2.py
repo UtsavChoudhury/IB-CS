@@ -2,8 +2,10 @@
 inp = int(input('Prompt: '))
 
 if (inp >= 90):
-    print('10')
+    result = '10'
 elif (inp >= 70):
-    print('9')
+    result = '9'
 else:
-    print('8') 
+    result = '8'
+
+print(result) 

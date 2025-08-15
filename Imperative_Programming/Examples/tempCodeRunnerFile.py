@@ -13,7 +13,7 @@ print("\n")
 
 print('Ex. 2')
 
-for x in range(0, 13):
+for x in range(0, 14):
     print(3 * 2**x, end=' ') 
 
 print("\n")
@@ -22,7 +22,7 @@ print("\n")
 
 print('Ex. 3')
 
-for x in range(1, 41):
+for x in range(1, 40):
     if (x % 4 == 0):
         print('-1', end=' ')
     else:
