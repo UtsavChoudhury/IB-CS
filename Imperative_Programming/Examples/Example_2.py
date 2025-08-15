@@ -7,6 +7,3 @@ elif (inp >= 70):
     print('9')
 else:
     print('8') 
-
-
-

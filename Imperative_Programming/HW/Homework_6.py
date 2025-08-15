@@ -9,8 +9,10 @@
 w = int(input('Enter a positive integer: '))
 
 if (w <= 2):
-    print(3)
+    result = 3
 elif (2 < w <= 5):
-    print(2 * w - 1)
+    result = 2 * w - 1
 else:
-    print(3 * w - 6)
+    result = 3 * w - 6
+
+print(result)

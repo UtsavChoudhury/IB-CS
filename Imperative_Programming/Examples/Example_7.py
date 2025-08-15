@@ -1,4 +1,3 @@
-
 s = 504053
 n = 1
 sol_found = False

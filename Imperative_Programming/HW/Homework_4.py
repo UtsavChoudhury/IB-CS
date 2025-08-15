@@ -1,9 +1,11 @@
 
-n = int(input('Enter a positive integer >1: '))
+n = int(input('Enter your hand total: '))
 
 if (n<17):
-    print('Hit')
+    result = 'Hit'
 elif(n>21):
-    print('Bust')
+    result = 'Bust'
 else:
-    print('Stay')
+    result = 'Stay'
+
+print(result)
