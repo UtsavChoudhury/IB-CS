@@ -1,5 +1,5 @@
-a = input("Enter a number for a: ")
-b = input("Enter a number for b: ")
+a = int(input("Enter a number for a: "))
+b = int(input("Enter a number for b: "))
 
 #1
 
@@ -15,17 +15,17 @@ print(result)
 
 #2
 
-succes = False
+success = False
 
 if (a >= 100):
     if (b<=50):
-        succes = True
+        success = True
 
 if (b>= 100):
     if (a<= 50):
-        succes = True
+        success = True
 
-if (not succes):
+if (not success):
     print(0)
 else:
     print(1)
