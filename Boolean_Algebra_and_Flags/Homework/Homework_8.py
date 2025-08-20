@@ -18,9 +18,6 @@ def checkprime(n):
     
     return(1)
 
-
-
-
 #1
 
 k = 1
