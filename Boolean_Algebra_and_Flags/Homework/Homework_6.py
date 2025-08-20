@@ -1,21 +1,21 @@
 import math
 k = 2
 n = int(input('Enter a positive integer: '))
-upper_bound = int(math.sqrt(n)) + 1
+upper_bound = int(math.sqrt(n))
+
+result = True
 
 if (n == 1):
-    print("Not prime!")
-    exit()
+    result = False
 
-if (n == 2):
-    print('Prime')
-    exit()
+elif (n == 2):
+    result = True
 
-while (k <= upper_bound):
-    if (n % k == 0):
-        print('Not prime!')
-        exit()
-    
-    k += 1
+else: 
+    while (k <= upper_bound):
+        if (n % k == 0):
+            result = False
+            break
+        k += 1
 
-print('Prime!')
+print(result)
