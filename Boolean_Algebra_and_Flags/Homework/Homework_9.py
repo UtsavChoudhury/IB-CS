@@ -10,12 +10,11 @@ def check_perfect(n):
         else:
             return 0
 
-    if (sum == k):
+    if (sum == n):
         return 1
     
 
 j = 1
-
 while (j < 10000):
     if check_perfect(j):
         print(j, end= ' ')
