@@ -7,8 +7,8 @@ while (response := input('Enter yes/no')) not in ('yes', 'no'):
     print('Please provide a proper response')
 
 if (weekday == 6 or weekday == 7) or (response == 'yes'):
-    response = 'true'
+    final = 'true'
 else:
-    response = 'false'
+    final = 'false'
 
-print(response)
+print(final)

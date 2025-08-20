@@ -13,6 +13,8 @@ def check_perfect(n):
     if (sum == n):
         return 1
     
+    return 0
+    
 
 j = 1
 while (j < 10000):
