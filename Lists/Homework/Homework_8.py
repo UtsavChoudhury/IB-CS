@@ -4,7 +4,7 @@ lst_2 = []
 while (inp := input('Enter a word: ')) != '!':
     lst_1.append(inp)
 
-while (inp := int(input('Enter an index: '))) > -1:
+while (inp := int(input('Enter an index: '))) > -1 and inp < len(lst_1):
     lst_2.append(inp)
 
 print(lst_1)
