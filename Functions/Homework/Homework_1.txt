@@ -1,0 +1,17 @@
+1. 
+    a. The first benefit of functions is that when maintaining code, a change only needs to be made in one place. 
+    In larger projects, this is particularly useful as changing the same thing in several parts of a project is laborious. 
+
+    b. Similarly, the code is easier to debug. Since you only have to make all changes in one place, you prevent errors throughout the program.
+
+    c. Time is saved; you do not need to write the same thing again with a different use-case. You can just revamp the original one to allow for more flexibility.
+
+2. 
+    The signature of a function refers to its name, its parameters (incl. names, number, order and various additional properties).
+
+3. 
+    1.
+        The name of the function is foo.
+
+    2. 
+        The number of parameters is two.
