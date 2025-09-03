@@ -11,7 +11,7 @@ fs = ['...'.join, str.split, str.lower] # We do not give the () when passing a f
 x = 'WHAT IS THIS?'
 
 
-print('hello'.upper())
-print(str.upper('hello')) # BOTH OF THESE WORK; when we use func(x), x goes in the place of hello here.
+#print('hello'.upper())
+#print(str.upper('hello')) # BOTH OF THESE WORK; when we use func(x), x goes in the place of hello here.
 
 print(apply_functions(fs, x))
