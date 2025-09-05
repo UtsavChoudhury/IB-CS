@@ -1,15 +1,11 @@
 def find_all(s, sub):
     left = 0
     res = []
-    while (left <= len(s) - 1):
-        val = s.find(sub, left)
-        if (val != -1):
-            res.append(val)
-            left = val + 1
-        else:
-            break
+    while left < len(s) and (i := s.find(sub, left)) >= 0:
+        res.append(i)
+        left = i + 1
     return res
-    
+
 inp = ['aba', 'ab', 'b']
 
 for x in inp:
