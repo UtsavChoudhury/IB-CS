@@ -1,10 +1,9 @@
 def max_char_rep(s):
-    counter = 1
-    best = 1
+    counter = best = 1
     if s == '':
         return 0
-    for x in range(1, len(s)):
-        if s[x-1] == s[x]:
+    for i in range(1, len(s)):
+        if s[i-1] == s[i]:
             counter += 1
 
             if counter > best:
