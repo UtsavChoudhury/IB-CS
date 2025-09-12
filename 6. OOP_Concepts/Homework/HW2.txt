@@ -1,0 +1,7 @@
+There is a dependency between ColdProduct and ColdStorage. Members of ColdProduct must be stored in ColdStorage (indicated by required).
+
+There is a inheritance relation between Freezer and Fridge (together) and ColdStorage. This means Freezer and Fridge are subclasses of ColdStorage.
+
+ColdStorage has an inheritance relation with Storage. ColdStorage is a subclass of Storage.
+
+There is an aggregation relation between Product and Storage; some members of Product are included in storage.

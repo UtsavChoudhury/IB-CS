@@ -1,0 +1,14 @@
+1. 
+    a. x is a parameter in __init__()
+    b. x is an instance variable in the body of __init__()
+    c. x is a local variable inside the function origin() and an object too.
+    d. x is an object after creation.
+
+2. variable type (do not talk about primative datatypes, rather this refers to other things)
+    There are no static variables in the class.
+
+3. The identifier Point refers to the class Point.
+
+4. 
+    a. When x = origin() is called, __init__() is called.
+    b. When print(x) is called, __str__() is called.

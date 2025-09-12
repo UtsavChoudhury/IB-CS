@@ -1,0 +1,24 @@
+1. A class is a user-defined datatype that is used as a blueprint for creating classes. 
+An object is an instance of a class, meaning it is created based on the class definition.
+
+2. 
+    a. 
+        i. Dependency: Passengers rely on trains for transportation.
+        ii. Aggregation: Some trains carry passengers, while others, like cargo trains, do not.
+
+    b. 
+        i. Dependency: Students rely on courses for learning.
+        ii. Aggregation: Many students are enrolled in courses, but some may not be.
+
+    c. 
+        i. Inheritance: Tables are a type of furniture (a subclass of furniture).
+        iii. Aggregation: Furniture (as a collection of objects in e.g. one room) can contain tables, but tables can exist independently.
+    
+    d. 
+        i. Dependency: Children rely on their parents for support.
+        ii. Aggregation: Many families can include children. However, children can exist independently from parents (orphans).
+
+    e. 
+        i. Aggregation: Many books are part of literature (classical sense), but some, like scientific books, are not.
+        ii. Dependency: Authors depend on books (e.g. classical books) to write literature.
+
