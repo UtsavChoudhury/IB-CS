@@ -1,5 +1,4 @@
-best_big = 0
-best_small = 0
+best_big = best_small = 0
 for n in range(1, 51):
     res = n * (n - 30) * (n - 50)
     

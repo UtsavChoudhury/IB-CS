@@ -10,7 +10,7 @@ w = int(input('Enter a positive integer: '))
 
 if (w <= 2):
     result = 3
-elif (2 < w <= 5):
+elif (2 < w <= 5): # since we already know w > 2 here
     result = 2 * w - 1
 else:
     result = 3 * w - 6
