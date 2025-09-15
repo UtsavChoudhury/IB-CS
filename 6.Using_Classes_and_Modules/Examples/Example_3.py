@@ -10,3 +10,4 @@ inp = ['aba', 'ab', 'b']
 
 for x in inp:
     print(find_all('ababab', x))
+0

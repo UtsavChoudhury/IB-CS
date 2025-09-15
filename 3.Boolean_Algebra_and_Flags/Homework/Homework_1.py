@@ -9,3 +9,8 @@ shining = (sun == 'yes') # sun == 'yes' will evaluate to a boolean (yes or no) a
 
 if (shining) or (10 <= time <= 16):
     print('Please use sunscreen')
+
+# OR
+
+if (sun == 'yes') or (10 <= time <= 16):
+    print('Please use sunscreen')

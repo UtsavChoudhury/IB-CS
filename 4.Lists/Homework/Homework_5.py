@@ -19,7 +19,7 @@ lst_1 = []
 lst_2 = []
 
 while (inp := int(input('Enter an integer: '))) > 0:
-    if inp not in lst_1:
+    if not (inp in lst_1):
         lst_2.append(inp)
     lst_1.append(inp)
 
