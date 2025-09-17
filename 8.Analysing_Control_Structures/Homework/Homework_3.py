@@ -13,3 +13,5 @@ if d != 0 and b:
     print(d, b)
 else:
     print(z, not b)
+
+

@@ -12,5 +12,7 @@ class Product:
 pc = Product('PC', 199.95) # constructor that automatically calls __init__()
 mac = Product('macmac', 2999.95) 
 
+
+      
 print(pc)
 print(mac)
