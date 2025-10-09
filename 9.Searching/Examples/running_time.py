@@ -14,14 +14,4 @@ def time_search(algo, n, /, sort_data=False):
     end = time.process_time()
     return end - start
 
-def read_words_from_url(url):
-    import requests
-
-    response = requests.get(url, stream=True)
-    words = [word for line in response.iter_lines()
-             if (word := line.decode('utf-8').strip()).isalpha()]
-
-    return words
-
-
 print(time_search(bin_search, 10**4, True))
