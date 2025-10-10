@@ -1,14 +1,11 @@
 def uniques(numbers):
-    check = []
+    seen = []
     for i in numbers:
-        if i in check:
+        if i in seen:
             return False
-        check.append(i)
+        seen.append(i)
     
     return True
-
-
-
 
 print(uniques([1, 2, 3, 4, 5]))
 print(uniques([1, 2, 3, 3]))

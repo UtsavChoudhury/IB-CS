@@ -14,4 +14,4 @@ def time_search(algo, n, /, sort_data=False):
     end = time.process_time()
     return end - start
 
-print(time_search(bin_search, 10**4, True))
+print(time_search(bin_search, 10**5, True))

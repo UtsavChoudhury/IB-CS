@@ -1,0 +1,9 @@
+Why is the following statement true?
+
+Array element access and array element modifcation both have worst-case time complexity O(1).
+
+Answer: 
+
+Python stores lists as a contiguous block of memory. Thus, it is possible to merely access one element and change it without going through all previous elements.
+
+When using linked-lists, you need to go through all of them, but this model also enables insertions and deletions to be more efficient.
