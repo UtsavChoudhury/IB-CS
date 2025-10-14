@@ -1,3 +1,3 @@
-Utsav Choudhury
+# Utsav Choudhury
 
-SYK IB Computer Science
+**SYK IB Computer Science**
