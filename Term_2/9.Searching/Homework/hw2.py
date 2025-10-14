@@ -14,4 +14,3 @@ res = seq_search('Charlie', students, grades)
 
 if res != 'QAQ':
     print(res)
-
