@@ -22,7 +22,7 @@ def counting_sort(array):
     # initialize and find counts
     counts = [0 for _ in range(ub - lb + 1)]
     for i in range(len(array)):
-        counts[array[i] - lb] += 1
+        counts[array[i] + lb] += 1
 
     # counts to elements in array
     j = 0 # index into array

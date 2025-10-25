@@ -14,7 +14,7 @@ def interpolation_search(arr, key):
             return -1
         
         val = arr[i]
-
+ 
         if val == key:
             return i
 
