@@ -1,4 +1,4 @@
-class Company:
+class Company():
     def __init__(self, name, projects):
         self.name = name
         self.projects = projects
@@ -8,7 +8,7 @@ class Company:
         return f'COMPANY NAME: {self.name}\nPROJECTS:\n{projects_str}'
 
 
-class Project:
+class Project():
     def __init__(self, identifier, tasks):
         self.identifier = identifier
         self.tasks = tasks
@@ -28,13 +28,13 @@ class Task():
         return f'TASK: {self.name}\nWORKERS:\n{workers_str}'
 
 
-class Workers:
+class Worker():
     def __init__(self, name, employee):
         self.name = name
-        self.employee = employee
+        self.employee_status = employee
     
     def __str__(self):
-        if self.employee:
+        if self.employee_status:
             status = 'Employee'
         else:
             status = 'Hired-Contractor'
