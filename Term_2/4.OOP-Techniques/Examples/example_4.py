@@ -19,7 +19,7 @@ class Order:
         self.products.append(product)
 
     def __str__(self):
-        return f"Order: {[f'{p.model} (${p.price})' for p in self.products]}"
+        return f"Order: {[f'{p.model} (${p.price})' for p in self.products]}" # Since we have an object of class Product here, we can access its attributes.
 
 class Warehouse:
     def __init__(self, laptops, routers):

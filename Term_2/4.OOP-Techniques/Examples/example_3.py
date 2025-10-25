@@ -7,7 +7,7 @@ class Child(Parent):
         return super().__str__() + ' & child'
 
 p = Parent() # superclass object
-c = Child() # subclass object
+c = Child() # subclass object. This is an example of overriding by class of reference (subtype polymorphism).
 print(p) # call __str__()
 print(c)
 
