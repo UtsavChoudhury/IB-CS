@@ -28,6 +28,10 @@ books = [clrs, fkww, t]
 
 books.sort(key=get_num_authors, reverse=True) # This will apply this function to every element then sort. Note, do not use () as this would try call it.
 
+# OR
+
+books.sort(key=Book.num_authors, reverse=True)
+
 for book in books: # You cant just print(books) because there are objects stored inside. Print calls repr() not __str__().
     #print(repr(book)) # canonical string representation -> 'official' string representation. Most things will return same as print() but objetcs will return memory address.
     #print(repr('hello')) # This is normal

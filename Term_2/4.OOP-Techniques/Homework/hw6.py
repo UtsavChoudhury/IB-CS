@@ -41,8 +41,8 @@ class Worker():
         return f'WORKER NAME: {self.name}\n - STATUS: {status}'
 
 
-Alice = Workers('Alice', True)
-Bob = Workers('Bob', False)
+Alice = Worker('Alice', True)
+Bob = Worker('Bob', False)
 
 Research = Task('Research', [Alice])
 Training = Task('Training', [Bob])
