@@ -1,0 +1,8 @@
+Unit testing is testing that is done on small, isolated pieces of code, e.g. single classes/methods. 
+System testing tests the system/application as a whole. In both cases, developers do the testing.
+
+The purpose of beta-testing is to get hands-on feedback on the product from real, potential customers.
+Oftentimes, developers forget features that there is demand for or include unimportant features.
+Furthermore, some bugs/errors only arise when external users test the product.
+
+Debugging is the process of finding and resolving defects in code.
