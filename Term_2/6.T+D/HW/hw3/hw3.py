@@ -3,13 +3,13 @@ frequencies = [7, 4, 11, 9]
 
 count = 0
 i = 0
-while i <= len(frequencies):
+while i <= len(frequencies): # < NOT <=
     count += frequencies[i]
     i += 1
 
 for (i, f) in enumerate(frequencies):
-    val = f // count
-    rel_freqs[i] = val
+    val = f // count # INTEGER DIVISION -> ALWAYS 0 FOR THIS AS COUNT IS BIG AND FREQUENCIES ARE SMALLER so < 1 -> 0
+    rel_freqs[i] = val # NOT DEFINED
 
-for (o, r) in zip(observations, rel_freqs):
+for (o, r) in zip(observations, rel_freqs): # NOT DEFINED
     print(f'{o} : {r}')
