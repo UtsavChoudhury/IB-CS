@@ -16,3 +16,5 @@ from hw2 import bin_search
 def test_bin_search(target, list_in, expected):  # test function
     result = bin_search(target, list_in)  # Flip the order of arguments
     assert result == expected  # match against expected
+
+# pytest -v /Users/jishnu/Computer_Science_HL/IB-CS/Term_2/6.T+D/HW/hw2/hw2_test.py
