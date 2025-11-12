@@ -1,0 +1,6 @@
+awk '{if(NF>=2){print $2, $1, substr($0, index($0,$3))} else {print}}' <<EOF
+hello world example
+foo bar
+one
+a b c d
+EOF

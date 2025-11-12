@@ -1,0 +1,4 @@
+Partitioning of a list means dividing the list into two or more sublists based on a certain condition or rule. 
+A common example is splitting a list into elements that satisfy a condition (like being less than a value) and those that do not. 
+In algorithms like quicksort, partitioning is used to rearrange elements so that all items less than a chosen pivot come before it, and all items greater come after. 
+Partitioning helps organize data for further processing or analysis.

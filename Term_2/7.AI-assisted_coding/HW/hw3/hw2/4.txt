@@ -1,0 +1,6 @@
+RESULTS
+
+world hello example
+bar foo foo bar
+one
+b a c d

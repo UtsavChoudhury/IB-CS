@@ -1,0 +1,5 @@
+This function, powersort, sorts a list of integers based on two criteria:
+
+Primary sort: The sum of the digits of each integer (in ascending order). For example, 123 (1+2+3=6) would come before 42 (4+2=6) if their digit sums are equal, but otherwise, numbers with smaller digit sums come first.
+Secondary sort: If two numbers have the same digit sum, they are sorted by their actual value in ascending order.
+The function uses a helper, digit_sum, to calculate the sum of the digits for each number (ignoring the sign). The sorted function then sorts the list using a tuple as the key: first by digit sum, then by the number itself.

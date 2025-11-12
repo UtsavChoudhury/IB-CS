@@ -1,0 +1,5 @@
+A here document is a way to provide multiline input directly to a command in the shell using the << operator, ending with a specified delimiter (e.g., EOF).
+
+Delimiter ->
+
+A delimiter is a character or sequence of characters used to mark the beginning and end of a section of text or data. In the context of a here document, the delimiter indicates where the input starts and ends (for example, EOF).
