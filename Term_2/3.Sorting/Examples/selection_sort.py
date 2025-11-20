@@ -1,5 +1,5 @@
 def selection_sort(array):
-    for i in range(len(array)): # 0, 1, ..., n-2
+    for i in range(len(array)): # 0, 1, ..., n-1
         min_value = array[i]
         min_index = i
         for j in range(i+1, len(array)): # i + 1, ..., n-1
