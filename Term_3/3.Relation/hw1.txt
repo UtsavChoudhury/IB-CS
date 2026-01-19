@@ -1,0 +1,9 @@
+1. The **schema of a relation** defines its structure, including the table name, attributes, and their data types. An **instance of a relation** is the actual set of rows (tuples) present in the table at a given time. While the schema remains fixed, the instance can change as data is inserted, updated, or deleted.
+
+2. A **superkey** is any set of attributes that uniquely identifies each row in a table and may include extra, unnecessary attributes. A **candidate key** is a minimal superkey, meaning it has no extra attributes and still uniquely identifies each row. In short, all candidate keys are superkeys, but not all superkeys are candidate keys.
+
+3. Hospital - patients might have the same name/birthday/date of checkin, etc
+
+4. INT, FLOAT, BOOLEAN
+
+

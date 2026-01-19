@@ -1,0 +1,9 @@
+Inheritance lets a class get features from another class instead of rewriting them. For example, a Car class can inherit from a Vehicle class to reuse methods like startEngine(). This means other parts of the program don’t need to know the details of Car, reducing dependencies.
+
+2. Abstract Base Class
+
+An abstract base class gives a template for other classes to follow. For example, a Shape class can have an abstract method draw(), and Circle and Square can each implement it. Code that uses Shape doesn’t need to know which specific shape it is, so it doesn’t depend on concrete classes.
+
+3. Overriding
+
+Overriding lets a subclass change a method from the parent class. For example, a Dog class can override makeSound() from Animal to bark instead of making a generic sound. The rest of the program can call makeSound() on any Animal without worrying about which subclass it is, reducing dependencies.

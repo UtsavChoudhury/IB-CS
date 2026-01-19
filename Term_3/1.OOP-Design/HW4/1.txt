@@ -1,0 +1,7 @@
+1. Easier Maintenance 
+
+Reducing dependencies means that changes in one part of a program are less likely to affect other parts. This makes it easier to fix bugs or update features without breaking the system. As a result, maintenance becomes faster and safer.
+
+2. Improved Reusability
+
+When components rely less on each other, they can be reused in other programs or projects. Loosely coupled classes or modules are more modular and independent. This allows developers to save time by reusing existing code in new contexts.

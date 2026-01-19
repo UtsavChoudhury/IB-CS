@@ -1,7 +1,7 @@
 class Product:
     def __init__(self, model, price):
         self.model = model
-        self.price = price
+        self.price = price 
 
 class Laptop(Product):
     def __init__(self, model, price):

@@ -1,0 +1,21 @@
+1 No:
+
+2025-06-01 Kim burglary Downtown
+2025-06-01 Lee burglary Downtown
+2025-06-02 Kim assault 5th Avenue
+2025-06-02 Lee assault 5th Avenue
+
+2. Crime_ID
+
+3. 
+
+CREATE TABLE crime_report(
+  report_date DATE,
+  officer VARCHAR,
+  crime VARCHAR,
+  location VARCHAR
+);
+
+INSERT INTO crime_report(report_date, officer, crime, location)
+VALUES
+('2025-06-01', 'Kim', 'burglary', 'Downtown')

@@ -10,7 +10,7 @@ class Newspaper():
         return self.__name
 
     def __str__(self):
-        return (f'NEWSPAPER DETAILS: [NAME = {self.get_name()}], ' # You can also use just self.__name
+        return (f'NEWSPAPER DETAILS: [NAME = {self.get_name()}], ' 
                 f'[YEAR = {self.year}], [MONTH = {self.month}], '
                 f'[DAY = {self.day_of_month}], [IS FINNISH = {self.is_finnish}]')                # Create an object of the Newspaper class
 

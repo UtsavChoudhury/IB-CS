@@ -1,0 +1,19 @@
+1. These are rules for transaction managment to ensure that a database remains consistent
+
+Atomicity: A transaction fully happens or doesn’t happen.
+
+Consistency: Each transaction leaves the databse in a valid state.
+
+Isolation: Transactions don’t interfere with one another.
+
+Durability: Once committed, changes are permanent.
+
+
+2
+    2.1 Someone has withdrawn money and another person has deposited money.
+
+    2.2. If there is a crash between UPDATES
+
+    2.3 BEGIN TRANSACTION, COMMIT
+
+    2.4. If we wish to refund these people or obtain the money we gave them. Also possible in case there is an issue with negative money.

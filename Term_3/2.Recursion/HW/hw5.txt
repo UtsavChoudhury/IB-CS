@@ -1,0 +1,8 @@
+1. 
+[3, 7, 9, -2, 3, 1]  # original
+[3, 1, 9, -2, 3, 7]  # first swap (7 and 1)
+[3, 1, 9, -2, 3, 7]  # no swap, pointers move
+[3, 1, -2, 9, 3, 7]  # second swap (9 and -2)
+[-2, 1, 3, 9, 3, 7]  # pivot placed in final position
+
+Quicksort works by selecting a “pivot” element from the list and then rearranging the other elements so that all elements smaller than or equal to the pivot come before it and all elements greater come after it. This step is called partitioning, and after it, the pivot is in its final sorted position. The algorithm then recursively applies the same process to the sublists on the left and right of the pivot, repeatedly choosing pivots and partitioning until all sublists are of size one or zero, which are naturally sorted. Because it sorts the elements in place during partitioning, it is usually memory efficient, and its average time complexity is O(n log n), although the worst case is O(n²) if poor pivot choices are consistently made

@@ -1,0 +1,7 @@
+1. One-to-one: At a single point in time, a driver may only be driving one vehicle. 
+
+2. Many-to-many: A shop may have multiple owners and these owners may own multiple shops.
+
+3. One-to-one
+
+4. One-to-many

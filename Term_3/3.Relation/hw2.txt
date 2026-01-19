@@ -1,0 +1,35 @@
+1
+
+CREATE TABLE SecuritySystem(
+    event_time TIMESTAMP,
+    door INT,
+    event_type VARCHAR
+);
+
+2 Given above
+
+3
+
+{event_time, door} → likely unique, because the same door cannot have two events at the exact same timestamp. 
+
+{event_time, door, event_type} → also unique, but includes an extra attribute, so it’s a superkey, not minimal.
+
+4
+
+Primary key: {event_time, door}
+
+
+CREATE TABLE SecuritySystem(
+    event_time TIME,
+    door INT,
+    event_type VARCHAR,
+    PRIMARY KEY (event_time, door)
+);
+
+
+INSERT INTO SecuritySystem (event_time, door, event_type)
+VALUES
+('12:16:22.11', 45, 'open'),
+('09:44:03.43', 32, 'close'),
+('04:03:52.97', 45, 'close'),
+('19:33:37.63', 17, 'open')

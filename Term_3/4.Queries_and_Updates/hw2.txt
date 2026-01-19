@@ -1,0 +1,43 @@
+1.
+
+SELECT "patient-id", "rest-pressure"
+FROM patient
+ORDER BY "rest-pressure" ASC
+LIMIT 3;
+
+2.
+
+SELECT COUNT(*) 
+FROM patient 
+WHERE max_heart_rate <= 120;
+
+3.
+
+SELECT age 
+FROM patient 
+ORDER BY max_heart_rate DESC 
+LIMIT 1;
+
+4.
+
+SELECT "exercise_ angina", AVG(max_heart_rate) AS average_max_heart_rate
+FROM patient
+GROUP BY "exercise_ angina";
+
+5.
+
+SELECT diagnosis, COUNT(*) AS patient_count
+FROM patient
+GROUP BY diagnosis
+ORDER BY patient_count DESC;
+
+6.
+
+SELECT 
+    sex, 
+    "exercise_ angina", 
+    COUNT(*) AS row_count, 
+    MIN("rest-pressure") AS min_rest_pressure, 
+    MAX("rest-pressure") AS max_rest_pressure
+FROM patient
+GROUP BY sex, "exercise_ angina";

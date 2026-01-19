@@ -1,0 +1,15 @@
+CREATE TABLE Bookings (
+    booking_id INT PRIMARY KEY,
+    customer_name VARCHAR,
+    movie_title VARCHAR,
+    auditorium INT,
+    seat_number VARCHAR,
+    show_time TIMESTAMP
+);
+
+INSERT INTO Bookings (booking_id, customer_name, movie_title, auditorium, seat_number, show_time)
+VALUES
+(1, 'Alice Brown', 'Inception', 1, 'A12', '2025-06-01 18:00:00'),
+(2, 'John Smith', 'Inception', 1, 'A13', '2025-06-01 18:00:00'),
+(3, 'Emma Wilson', 'Interstellar', 2, 'B05', '2025-06-01 20:30:00'),
+(4, 'Liam Stone', 'Dune', 3, 'C10', '2025-06-01 21:00:00');

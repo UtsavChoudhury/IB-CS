@@ -1,0 +1,118 @@
+1. Many-to-many diagram
+
+2. 
+a. Makes sure each foreign key refers to an existing primary key: we can retrieve info.
+b. Integrity is maintained during update
+c. Integrity is maintained during deletion
+
+3. Many officers typically involved during a crime: non-atomic
+
+CRIME(CrimeID, CrimeType, CrimeAddress, CrimeDateTime)
+
+OFFICER(OfficerID, OfficerName)
+
+EVIDENCE(EvidenceID, EvidenceType, EvidenceDesc)
+
+VICTIM(VictimID, VictimName, VictimPhone)
+
+VICTIM_CRIME(VictimID*, CrimeID*, WasPresent)
+
+EVIDENCE_CRIME(EvidenceID*, CrimeID*, WasPresent)
+
+CRIME_OFFICER(CrimeID*, OfficerID*, WasPresent)
+
+CREATE TABLE CRIME (
+    CrimeID INT PRIMARY KEY,
+    CrimeType VARCHAR(100),
+    CrimeAddress VARCHAR(255),
+      CrimeDateTime TIMESTAMP
+);
+
+CREATE TABLE OFFICER (
+    OfficerID INT PRIMARY KEY,
+    OfficerName VARCHAR(100)
+);
+
+CREATE TABLE EVIDENCE (
+    EvidenceID INT PRIMARY KEY,
+    EvidenceType VARCHAR(100),
+    EvidenceDesc VARCHAR(255)
+);
+
+CREATE TABLE VICTIM (
+    VictimID INT PRIMARY KEY,
+    VictimName VARCHAR(100),
+    VictimPhone VARCHAR(20)
+);
+
+CREATE TABLE VICTIM_CRIME (
+    VictimID INT,
+    CrimeID INT,
+    WasPresent BOOLEAN,
+    PRIMARY KEY (VictimID, CrimeID),
+    FOREIGN KEY (VictimID) REFERENCES VICTIM(VictimID),
+    FOREIGN KEY (CrimeID) REFERENCES CRIME(CrimeID)
+);
+
+CREATE TABLE EVIDENCE_CRIME (
+    EvidenceID INT,
+    CrimeID INT,
+    WasPresent BOOLEAN,
+    PRIMARY KEY (EvidenceID, CrimeID),
+    FOREIGN KEY (EvidenceID) REFERENCES EVIDENCE(EvidenceID),
+    FOREIGN KEY (CrimeID) REFERENCES CRIME(CrimeID)
+);
+
+CREATE TABLE CRIME_OFFICER (
+    CrimeID INT,
+    OfficerID INT,
+    WasPresent BOOLEAN,
+    PRIMARY KEY (CrimeID, OfficerID),
+    FOREIGN KEY (CrimeID) REFERENCES CRIME(CrimeID),
+    FOREIGN KEY (OfficerID) REFERENCES OFFICER(OfficerID)
+);
+
+-- CRIME
+INSERT INTO CRIME (CrimeID, CrimeType, CrimeAddress, CrimeDateTime) VALUES
+(1, 'Burglary', '123 Main St', '2026-01-10 14:30:00'),
+(2, 'Robbery', '45 Elm St', '2026-01-12 18:45:00'),
+(3, 'Vandalism', '78 Oak St', '2026-01-15 22:10:00');
+
+-- OFFICER
+INSERT INTO OFFICER (OfficerID, OfficerName) VALUES
+(1, 'Alice Johnson'),
+(2, 'Bob Smith'),
+(3, 'Charlie Lee');
+
+-- EVIDENCE
+INSERT INTO EVIDENCE (EvidenceID, EvidenceType, EvidenceDesc) VALUES
+(1, 'Fingerprint', 'Fingerprint on front door'),
+(2, 'CCTV Footage', 'Security camera video of suspect'),
+(3, 'Weapon', 'Knife found at scene');
+
+-- VICTIM
+INSERT INTO VICTIM (VictimID, VictimName, VictimPhone) VALUES
+(1, 'John Doe', '555-1234'),
+(2, 'Mary Jane', '555-5678'),
+(3, 'Peter Parker', '555-8765');
+
+-- VICTIM_CRIME (many-to-many)
+INSERT INTO VICTIM_CRIME (VictimID, CrimeID, WasPresent) VALUES
+(1, 1, TRUE),
+(2, 1, FALSE),
+(2, 2, TRUE),
+(3, 3, TRUE);
+
+-- EVIDENCE_CRIME (many-to-many)
+INSERT INTO EVIDENCE_CRIME (EvidenceID, CrimeID, WasPresent) VALUES
+(1, 1, TRUE),
+(2, 2, TRUE),
+(3, 3, TRUE),
+(2, 3, FALSE);  -- evidence related but not found at scene
+
+-- CRIME_OFFICER (many-to-many)
+INSERT INTO CRIME_OFFICER (CrimeID, OfficerID, WasPresent) VALUES
+(1, 1, TRUE),
+(1, 2, TRUE),
+(2, 2, TRUE),
+(3, 3, TRUE);

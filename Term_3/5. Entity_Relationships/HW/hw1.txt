@@ -1,0 +1,7 @@
+1. A column (or many) in one database table that links to the primary key of a another table. 
+
+2. Foreign key always refers to a valid primary key
+
+3. Schema that refers to the entities in a relationship and the relationshuos between such entities.
+
+4. The logical schema refers to the database objects such as tables, keys, etc.

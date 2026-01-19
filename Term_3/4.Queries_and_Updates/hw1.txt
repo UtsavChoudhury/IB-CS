@@ -1,0 +1,58 @@
+1.
+
+SELECT product_type 
+FROM product 
+WHERE category = 'Electronics';
+
+2.
+
+SELECT product_type 
+FROM product 
+WHERE product_type LIKE '%se%';
+
+3.
+
+SELECT DISTINCT category 
+FROM product 
+ORDER BY category ASC;
+
+4.
+
+SELECT product_id, product_type 
+FROM product 
+WHERE price <= 20.00 AND stock_quantity >= 100;
+
+5.
+
+SELECT product_id, product_type, date_added 
+FROM product 
+WHERE date_added BETWEEN '2024-03-01' AND '2024-03-31';
+
+6.
+
+SELECT product_type 
+FROM product 
+ORDER BY date_added DESC 
+LIMIT 3;
+
+7.
+
+SELECT product_type, (price * stock_quantity) AS total_stock_value
+FROM product
+ORDER BY total_stock_value DESC;
+
+8.
+
+UPDATE product 
+SET price = 18.99 
+WHERE product_type = 'T-Shirt';
+
+9.
+
+DELETE FROM product 
+WHERE product_type = 'Noise Cancelling Headphones';
+
+10.
+
+INSERT INTO product (product_id, product_type, category, price, stock_quantity, date_added)
+VALUES (9, 'Biking Helmet', 'Sports', 69.95, 500, CURRENT_DATE);
