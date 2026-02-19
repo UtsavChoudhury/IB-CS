@@ -1,0 +1,1 @@
+DB_CONN_STR='postgresql://neondb_owner:npg_XemR9YQf5juP@ep-crimson-thunder-ag25ghqr-pooler.c-2.eu-central-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require'

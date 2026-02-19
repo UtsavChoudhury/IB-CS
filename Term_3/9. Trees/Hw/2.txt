@@ -1,0 +1,14 @@
+1. DONE
+
+2. 
+
+7
+insert -14 12 
+Go to -14
+insert -15 and -1
+Go to 12
+insert 9 and 62
+
+-15, -14, -1, 9, 12, 62
+
+-1

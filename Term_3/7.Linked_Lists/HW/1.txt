@@ -1,0 +1,4 @@
+1.1 Traverse the list (starting from the head). When there is no new node, add the element to the end as a new node.
+
+1.2 You have access to the tail so you use that.
+2. The node must be linked to the previous node. It must also be linked to the following node. Te previous connection between the previous and following nodes must be broken.

@@ -1,9 +1,9 @@
-1. Many-to-many diagram
+1. One-to-many and Many-two-one
 
 2. 
-a. Makes sure each foreign key refers to an existing primary key: we can retrieve info.
-b. Integrity is maintained during update
-c. Integrity is maintained during deletion
+    a. Makes sure each foreign key refers to an existing primary key: we can retrieve info.
+    b. Integrity is maintained during update
+    c. Integrity is maintained during deletion
 
 3. Many officers typically involved during a crime: non-atomic
 
@@ -23,26 +23,26 @@ CRIME_OFFICER(CrimeID*, OfficerID*, WasPresent)
 
 CREATE TABLE CRIME (
     CrimeID INT PRIMARY KEY,
-    CrimeType VARCHAR(100),
-    CrimeAddress VARCHAR(255),
+    CrimeType VARCHAR,
+    CrimeAddress VARCHAR,
       CrimeDateTime TIMESTAMP
 );
 
 CREATE TABLE OFFICER (
     OfficerID INT PRIMARY KEY,
-    OfficerName VARCHAR(100)
+    OfficerName VARCHAR
 );
 
 CREATE TABLE EVIDENCE (
     EvidenceID INT PRIMARY KEY,
-    EvidenceType VARCHAR(100),
-    EvidenceDesc VARCHAR(255)
+    EvidenceType VARCHAR,
+    EvidenceDesc VARCHAR
 );
 
 CREATE TABLE VICTIM (
     VictimID INT PRIMARY KEY,
-    VictimName VARCHAR(100),
-    VictimPhone VARCHAR(20)
+    VictimName VARCHAR,
+    VictimPhone VARCHAR
 );
 
 CREATE TABLE VICTIM_CRIME (

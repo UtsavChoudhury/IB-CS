@@ -1,0 +1,7 @@
+1. List
+
+2. Linked list: Deletions are expensive
+
+3. List
+
+If we get more data everyday though, BST may be better for 3

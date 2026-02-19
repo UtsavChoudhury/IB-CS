@@ -1,0 +1,58 @@
+1. 
+a. name, city
+b. latitude, longitude
+
+
+2. 
+
+SELECT precipitation_mm
+FROM weather_observation
+ORDER BY precipitation_mm DESC
+LIMIT 3;
+
+3. 
+
+SELECT alert_type, (expires_at - issued_at) AS duration
+FROM weather_alert
+ORDER BY duration DESC
+LIMIT 3;
+
+4.
+
+SELECT ws.city, wo.observation_date, wo.observation_time, wo.temperature_celsius
+FROM weather_observation AS wo
+JOIN weather_station AS ws
+ON wo.station_id = ws.station_id;
+
+5.
+
+SELECT ws.city, wo.observation_date, wo.observation_time, wo.temperature_celsius, (wo.temperature_celsius * 1.8 + 32) AS Fahrenheit
+FROM weather_observation AS wo
+JOIN weather_station AS ws
+ON wo.station_id = ws.station_id;
+
+6.
+
+SELECT ws.station_name
+FROM weather_station as ws
+JOIN weather_alert as wa
+ON ws.station_id = wa.station_id
+WHERE wa.severity = 'Severe';
+
+7.
+
+SELECT severity, COUNT(*) AS number_of_alerts
+FROM weather_alert
+GROUP BY severity;
+
+8.
+
+CREATE VIEW severe_alert AS
+SELECT
+    wa.alert_type,
+    ws.city,
+    wa.expires_at
+FROM weather_alert AS wa
+JOIN weather_station AS ws
+    ON wa.station_id = ws.station_id
+WHERE wa.severity = 'Severe';

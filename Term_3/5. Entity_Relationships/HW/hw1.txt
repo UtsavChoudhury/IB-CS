@@ -2,6 +2,6 @@
 
 2. Foreign key always refers to a valid primary key
 
-3. Schema that refers to the entities in a relationship and the relationshuos between such entities.
+3. Schema that refers to the entities in a relationship and the relationships between such entities.
 
 4. The logical schema refers to the database objects such as tables, keys, etc.

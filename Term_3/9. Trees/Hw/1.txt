@@ -1,0 +1,15 @@
+1. 46, 9, 4, 2, 1, 13, 11, 54, 48, 101
+
+2. 1, 2, 4, 9, 11, 13, 46, 48, 54, 101
+
+3. 1 2 4 11 13 9 48 101 54 46
+
+Go left to 9, go right to 13, go down to 11; return false
+
+Go right, to right, put 76 under 101
+
+Make 4 the global root and connect 46 to it
+
+47
+
+102, 103, 104, 105, 106,

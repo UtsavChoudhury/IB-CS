@@ -1,0 +1,1 @@
+All nodes must be visited worst case to ensure correctness. Traverse the list, starting from head until either the element is found or the following node is current. If it is found, return True. If the following element does not exist, return False as the end of the linked list has been reached

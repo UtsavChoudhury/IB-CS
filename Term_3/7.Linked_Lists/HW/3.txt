@@ -1,0 +1,3 @@
+1. Start at head. Go to the next element. Make this head. Delete the old head.
+
+2. Traverse until node with target value is found. We stay on the node before the target node. We obtain the node after the target node. We connect the node before and after the target node. We delete the target node.
