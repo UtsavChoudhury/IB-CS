@@ -1,0 +1,10 @@
+1. Every single day has at a UV warning or a rain warning or both.
+
+2. There are no days when there are UV warnings and rain warnings.
+
+3. All days in June do not have a rain warning but have a UV warning. 
+
+4. One day does not have a UV warning and has a rain warning.
+
+5. All days with rain warnings also have UV warnings; however, all days with UV warnings do not necessarily have
+rain warnings. 

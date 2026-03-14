@@ -1,0 +1,5 @@
+1. Pytest, pygame
+
+2. requests
+
+3. pyside6, pytst, pygame, requests

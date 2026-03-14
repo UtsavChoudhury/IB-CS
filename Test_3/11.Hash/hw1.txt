@@ -1,0 +1,33 @@
+1. Hash table
+   A data structure that stores key–value pairs in an array using a hash function to determine the index where each key is stored.
+
+2. Hashing function
+   A function h(k) that takes a key k and maps it to an index in the hash table.
+
+3. Collision
+   A situation where two different keys are mapped to the same index in the hash table.
+
+4. Separate chaining
+   A collision resolution method where each array index contains a list of all elements that hash to that index.
+
+5. Open addressing
+   A collision resolution method where, if a slot is occupied, the algorithm searches for another empty slot in the table.
+
+6. Probing sequence
+   The sequence of indices that are checked when searching for an empty slot in open addressing.
+
+7. Load factor
+   The ratio of the number of stored elements to the size of the hash table.
+
+
+Separate chaining
+
+When the load factor is close to 1, the number of elements is about the same as the number of table slots. Since collisions are handled by storing elements in lists at each slot, many slots will contain chains with multiple elements.
+
+Insertions still work normally, but the chains become longer. This increases the time needed to search through the chain. The average insertion time remains about constant, but operations become slower because longer lists must be traversed.
+
+
+When the load factor is close to 1, most slots in the table are already filled. When inserting a new element, collisions occur very frequently, and the probing sequence must check many slots before finding an empty one.
+
+As a result, insertion becomes very slow. In the worst case, almost the entire table must be scanned before finding an empty slot. If the table becomes completely full, no further insertions are possible without resizing the table.
+
